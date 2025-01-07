@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .card {
+            width: 600px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card-side {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .front {
+            background: url('image.jpg') no-repeat center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .front h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .front h2 {
+            font-size: 1.5rem;
+        }
+        .back {
+            background: linear-gradient(to bottom, #fff, #e6f7ff);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Front Side -->
+        <div class="card-side front">
+            <h1>Happy Birthday!</h1>
+            <h2>AbhinayaSai</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-side back">
+            <p>
+                Wishing you a day filled with love, laughter, and all your favorite things. 
+                May this year bring you countless blessings and endless happiness. 
+                Happy Birthday, AbhinayaSai!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
